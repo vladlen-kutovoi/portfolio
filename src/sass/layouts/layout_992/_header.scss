@@ -1,0 +1,48 @@
+.header {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 104px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.main-menu {
+  position: static;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding: 0;
+  overflow-y: inherit;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin: 0 24px 0 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 16px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $orange;
+      transition: width 0.25s ease;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
