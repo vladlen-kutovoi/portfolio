@@ -1,0 +1,15 @@
+.hero {
+  position: relative;
+
+  .container {
+    position: relative;
+    top: 250px;
+    transform: translateY(-50%);
+  }
+
+  &__links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 104px;
+
+  .text-wrapper {
+    max-width: 650px;
+  }
+
+  &__text {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 24px;
+
+    i {
+      color: $orange;
+    }
+  }
+
+  .img-wrapper {
+    display: none;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials {
+    margin-bottom: 15px;
+  }
+
+  &__down-button {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    transform: translateX(-50%);
+
+    .icon {
+      opacity: 0;
+      transform: translateY(-10px);
+      animation: scroll 1.5s infinite ease;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

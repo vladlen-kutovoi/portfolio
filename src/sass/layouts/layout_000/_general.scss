@@ -28,3 +28,41 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.socials {
+  display: flex;
+
+  &__item {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 40px;
+      height: 40px;
+      background-color: $orange;
+      border-radius: 50%;
+      transition: transform 0.25s ease;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      &::after {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    max-width: 40px;
+    height: 40px;
+  }
+}

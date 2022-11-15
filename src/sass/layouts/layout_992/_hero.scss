@@ -1,0 +1,26 @@
+.hero {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .text-wrapper {
+    margin-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .img-wrapper {
+    display: block;
+    width: 370px;
+    height: 370px;
+    padding: 10px;
+    border-radius: 50%;
+    background: $orange;
+    background: linear-gradient(180deg, rgba(191, 117, 6, 1) 0%, rgba(221, 156, 60, 1) 100%);
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+}
