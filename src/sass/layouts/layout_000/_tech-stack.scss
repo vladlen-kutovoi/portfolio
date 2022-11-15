@@ -1,0 +1,23 @@
+.tech-stack-section {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .heading {
+    margin-bottom: 48px;
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 90px;
+  justify-content: space-evenly;
+  max-width: 860px;
+  margin: 0 auto;
+
+  &__item {
+    max-width: 200px;
+  }
+}
