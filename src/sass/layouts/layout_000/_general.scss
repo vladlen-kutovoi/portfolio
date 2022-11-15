@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -24,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -65,4 +69,11 @@ body {
     max-width: 40px;
     height: 40px;
   }
+}
+
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  color: $orange;
 }

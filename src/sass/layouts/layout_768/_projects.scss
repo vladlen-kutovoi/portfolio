@@ -1,0 +1,14 @@
+.projects {
+  grid-template-columns: repeat(2, 350px);
+
+  .link-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    &:not(:last-of-type) {
+      margin: 0 16px 0 0;
+    }
+  }
+}
