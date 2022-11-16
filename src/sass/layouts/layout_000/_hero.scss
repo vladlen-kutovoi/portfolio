@@ -2,6 +2,10 @@
   position: relative;
   min-height: 100vh;
   padding-top: 104px;
+  background-image: url('../img/hero-bg.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .text-wrapper {
     max-width: 650px;

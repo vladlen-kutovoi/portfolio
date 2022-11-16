@@ -1,5 +1,6 @@
 .projects-section {
 
+
   .container {
     display: flex;
     flex-direction: column;
@@ -53,6 +54,7 @@
   &__tech-stack {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 16px;
 
     &__item {
@@ -62,10 +64,6 @@
       font-weight: 400;
       font-size: 12px;
       cursor: default;
-
-      &:not(:last-of-type) {
-        margin-right: 4px;
-      }
     }
   }
 

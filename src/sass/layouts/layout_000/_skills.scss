@@ -1,0 +1,84 @@
+.skills {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .heading {
+      margin-bottom: 36px;
+    }
+  }
+
+  .heading {
+    margin-bottom: 48px;
+  }
+
+  .inner-wrapper {
+    width: 100%;
+  }
+
+  .projects__tech-stack {
+    &__item {
+      font-size: 16px;
+    }
+  }
+
+  .xp-text {
+    margin-bottom: 16px;
+  }
+}
+
+.languages {
+  &__item {
+    position: relative;
+    padding-bottom: 36px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      height: 20px;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #bf7506, #dd9c3c);
+    }
+
+    &_advanced {
+      &::after {
+        width: 83%;
+      }
+    }
+
+    &_intermediate {
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__level {
+    display: inline-block;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
+.xp-text {
+  font-size: 24px;
+  font-weight: 700;
+}

@@ -76,4 +76,9 @@ body {
   font-weight: 700;
   font-size: 48px;
   color: $orange;
+
+  &_subheading {
+    font-size: 36px;
+    color: $orange-light;
+  }
 }
