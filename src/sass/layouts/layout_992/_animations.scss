@@ -1,0 +1,26 @@
+.to-be-animated {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.75s ease;
+
+  &_reverse {
+    transform: translateY(-50px);
+  }
+}
+
+.faded-in {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.languages__item {
+  &::after {
+    width: 0;
+    transition: width 1.25s ease;
+  }
+
+  &.active::after {
+    width: 100%;
+  }
+}

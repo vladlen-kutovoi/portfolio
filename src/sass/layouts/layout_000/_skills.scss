@@ -54,13 +54,13 @@
 
     &_advanced {
       &::after {
-        width: 83%;
+        max-width: 83%;
       }
     }
 
     &_intermediate {
       &::after {
-        width: 50%;
+        max-width: 50%;
       }
     }
   }
