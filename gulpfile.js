@@ -45,6 +45,12 @@ function images() {
     .pipe(browsersync.stream());
 }
 
+function docs() {
+  return src('./src/docs/**/*')
+    .pipe(dest('./dist/docs'))
+    .pipe(browsersync.stream());
+}
+
 function browserSync() {
   browsersync.init({
     server: {
@@ -59,5 +65,6 @@ function watchFiles() {
   watch('./src/*.html', html);
   watch('./src/img/**/*', images);
   watch('./src/js/**/*', scripts);
+  watch('./src/docs/**/*', docs);
 }
-exports.default = series(clean, parallel(html, styles, scripts, images), parallel(watchFiles, browserSync));
+exports.default = series(clean, parallel(html, styles, scripts, images, docs), parallel(watchFiles, browserSync));
